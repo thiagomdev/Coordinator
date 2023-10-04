@@ -109,8 +109,8 @@
 		AADF718E2ACCEEC600A49530 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				AADF71902ACCEED300A49530 /* Home */,
 				AADF718F2ACCEECF00A49530 /* SignIn */,
+				AADF71902ACCEED300A49530 /* Home */,
 			);
 			path = Scene;
 			sourceTree = "<group>";

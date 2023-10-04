@@ -17,7 +17,6 @@ final class SignInViewController: UIViewController {
         return button
     }()
     
-    // MARK: - Override(s).
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
