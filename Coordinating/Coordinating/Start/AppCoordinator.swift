@@ -16,17 +16,17 @@ final class AppCoordinator {
     private var window: UIWindow
     
     init(
+        window: UIWindow,
         navigation: UINavigationController,
         sessionManager: SessionManager = .shared,
         signInCoordinator: SignInCoordinating,
-        homeCoordinator: HomeCoordinating,
-        window: UIWindow
+        homeCoordinator: HomeCoordinating
     ) {
-        self.navigation = navigation
         self.sessionManager = sessionManager
-        self.signInCoordinator = signInCoordinator
-        self.homeCoordinator = homeCoordinator
         self.window = window
+        self.navigation = navigation
+        self.homeCoordinator = homeCoordinator
+        self.signInCoordinator = signInCoordinator
     }
 }
 

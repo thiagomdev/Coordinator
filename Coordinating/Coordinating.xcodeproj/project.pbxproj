@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AADF71782ACCEE5000A49530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF71772ACCEE5000A49530 /* AppDelegate.swift */; };
-		AADF717A2ACCEE5000A49530 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF71792ACCEE5000A49530 /* SceneDelegate.swift */; };
 		AADF717C2ACCEE5000A49530 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF717B2ACCEE5000A49530 /* HomeViewController.swift */; };
 		AADF71812ACCEE5200A49530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADF71802ACCEE5200A49530 /* Assets.xcassets */; };
 		AADF71842ACCEE5200A49530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADF71822ACCEE5200A49530 /* LaunchScreen.storyboard */; };
@@ -18,12 +17,13 @@
 		AADF719D2ACCF20600A49530 /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF719C2ACCF20600A49530 /* SignInCoordinator.swift */; };
 		AADF719F2ACCF2B300A49530 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF719E2ACCF2B300A49530 /* SignInViewController.swift */; };
 		AADF71A12ACCF4A500A49530 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF71A02ACCF4A500A49530 /* SessionManager.swift */; };
+		AADF71A42ACCFE7100A49530 /* VirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF71A32ACCFE7100A49530 /* VirtualProxy.swift */; };
+		AADF71A72ACCFFBF00A49530 /* NSLayout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF71A62ACCFFBF00A49530 /* NSLayout+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AADF71742ACCEE5000A49530 /* Coordinating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADF71772ACCEE5000A49530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AADF71792ACCEE5000A49530 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AADF717B2ACCEE5000A49530 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AADF71802ACCEE5200A49530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AADF71832ACCEE5200A49530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +34,8 @@
 		AADF719C2ACCF20600A49530 /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
 		AADF719E2ACCF2B300A49530 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		AADF71A02ACCF4A500A49530 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		AADF71A32ACCFE7100A49530 /* VirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualProxy.swift; sourceTree = "<group>"; };
+		AADF71A62ACCFFBF00A49530 /* NSLayout+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayout+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,8 @@
 		AADF71762ACCEE5000A49530 /* Coordinating */ = {
 			isa = PBXGroup;
 			children = (
-				AADF71952ACCEF8A00A49530 /* Core */,
+				AADF71A52ACCFFAF00A49530 /* Core */,
+				AADF71A22ACCF56800A49530 /* Sources */,
 				AADF718D2ACCEE8D00A49530 /* Start */,
 				AADF718C2ACCEE8900A49530 /* Features */,
 				AADF718B2ACCEE8200A49530 /* SupportingFiles */,
@@ -95,9 +98,8 @@
 		AADF718D2ACCEE8D00A49530 /* Start */ = {
 			isa = PBXGroup;
 			children = (
-				AADF71772ACCEE5000A49530 /* AppDelegate.swift */,
-				AADF71792ACCEE5000A49530 /* SceneDelegate.swift */,
 				AADF71982ACCF02900A49530 /* AppCoordinator.swift */,
+				AADF71772ACCEE5000A49530 /* AppDelegate.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -161,21 +163,22 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		AADF71952ACCEF8A00A49530 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				AADF71A22ACCF56800A49530 /* Sources */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		AADF71A22ACCF56800A49530 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				AADF71962ACCEF9D00A49530 /* Coordinator.swift */,
 				AADF71A02ACCF4A500A49530 /* SessionManager.swift */,
+				AADF71A32ACCFE7100A49530 /* VirtualProxy.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		AADF71A52ACCFFAF00A49530 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AADF71A62ACCFFBF00A49530 /* NSLayout+Extension.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,10 +255,11 @@
 				AADF717C2ACCEE5000A49530 /* HomeViewController.swift in Sources */,
 				AADF71A12ACCF4A500A49530 /* SessionManager.swift in Sources */,
 				AADF71992ACCF02900A49530 /* AppCoordinator.swift in Sources */,
+				AADF71A72ACCFFBF00A49530 /* NSLayout+Extension.swift in Sources */,
 				AADF71782ACCEE5000A49530 /* AppDelegate.swift in Sources */,
 				AADF719F2ACCF2B300A49530 /* SignInViewController.swift in Sources */,
 				AADF719D2ACCF20600A49530 /* SignInCoordinator.swift in Sources */,
-				AADF717A2ACCEE5000A49530 /* SceneDelegate.swift in Sources */,
+				AADF71A42ACCFE7100A49530 /* VirtualProxy.swift in Sources */,
 				AADF719B2ACCF0C900A49530 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

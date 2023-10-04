@@ -6,27 +6,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private var appCoordinator: AppCoordinator?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        runApplication()
-        return true
-    }
-}
-
-final class SignCoordinatorVirtualProxy: SignInCoordinating {
-    weak var signCoordinator: SignInCoordinating?
-    
-    func start() {
-        signCoordinator?.start()
-    }
-    
-    func goToHome() {
-        signCoordinator?.goToHome()
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
+        
+        return runApplication()
     }
 }
 
 extension AppDelegate {
-    private func runApplication() {
-        let window = UIWindow(frame: UIScreen.main.coordinateSpace.bounds)
+    private func runApplication() -> Bool {
+        let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
         let navigation = UINavigationController()
@@ -47,12 +38,13 @@ extension AppDelegate {
         signInCoordinatorVirtualProxy.signCoordinator = signInCoordinator
         
         appCoordinator = AppCoordinator(
+            window: window,
             navigation: navigation,
             signInCoordinator: signInCoordinator,
-            homeCoordinator: homeCoordinator,
-            window: window
+            homeCoordinator: homeCoordinator
         )
         appCoordinator?.start()
+        return true
     }
 }
 

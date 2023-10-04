@@ -27,8 +27,15 @@ extension SignInCoordinator: SignInCoordinating {
     func start() {
         let signIn = SignInViewController()
         signIn.coordinator = self
-        window.rootViewController = UINavigationController(rootViewController: signIn)
-        window.makeKeyAndVisible()
+        
+        UIView.transition(
+            with: window,
+            duration: 1.0,
+            options: .curveEaseInOut,
+            animations: { [weak self] in
+                self?.window.rootViewController = signIn
+                self?.window.makeKeyAndVisible()
+        })
     }
     
     func goToHome() {
