@@ -12,9 +12,14 @@ final class HomeCoordinator {
     private var rootViewController: UIViewController?
     weak var signInCoordinator: SignInCoordinating?
     
-    init(window: UIWindow, navigation: UINavigationController) {
+    init(
+        window: UIWindow,
+        navigation: UINavigationController,
+        signInCoordinator: SignInCoordinating
+    ) {
         self.window = window
         self.navigation = navigation
+        self.signInCoordinator = signInCoordinator
     }
 }
 

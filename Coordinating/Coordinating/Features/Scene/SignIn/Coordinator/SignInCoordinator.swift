@@ -2,7 +2,7 @@ import UIKit
 
 protocol SignInCoordinating: AnyObject {
     func start()
-    func gotToHome()
+    func goToHome()
 }
 
 final class SignInCoordinator {
@@ -31,7 +31,7 @@ extension SignInCoordinator: SignInCoordinating {
         window.makeKeyAndVisible()
     }
     
-    func gotToHome() {
+    func goToHome() {
         homeCoordinator.start()
     }
 }

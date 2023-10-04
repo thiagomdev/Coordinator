@@ -17,7 +17,7 @@ final class AppCoordinator {
     
     init(
         navigation: UINavigationController,
-        sessionManager: SessionManager,
+        sessionManager: SessionManager = .shared,
         signInCoordinator: SignInCoordinating,
         homeCoordinator: HomeCoordinating,
         window: UIWindow
