@@ -6,6 +6,7 @@ protocol HomeCoordinating {
 }
 
 final class HomeCoordinator {
+    
     private let window: UIWindow
     private var navigation: UINavigationController
     private var rootViewController: UIViewController?

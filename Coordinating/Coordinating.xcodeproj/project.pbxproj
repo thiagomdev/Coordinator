@@ -17,6 +17,7 @@
 		AADF719B2ACCF0C900A49530 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF719A2ACCF0C900A49530 /* HomeCoordinator.swift */; };
 		AADF719D2ACCF20600A49530 /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF719C2ACCF20600A49530 /* SignInCoordinator.swift */; };
 		AADF719F2ACCF2B300A49530 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF719E2ACCF2B300A49530 /* SignInViewController.swift */; };
+		AADF71A12ACCF4A500A49530 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF71A02ACCF4A500A49530 /* SessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AADF719A2ACCF0C900A49530 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		AADF719C2ACCF20600A49530 /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
 		AADF719E2ACCF2B300A49530 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		AADF71A02ACCF4A500A49530 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 		AADF71762ACCEE5000A49530 /* Coordinating */ = {
 			isa = PBXGroup;
 			children = (
-				AADF71952ACCEF8A00A49530 /* Sources */,
+				AADF71952ACCEF8A00A49530 /* Core */,
 				AADF718D2ACCEE8D00A49530 /* Start */,
 				AADF718C2ACCEE8900A49530 /* Features */,
 				AADF718B2ACCEE8200A49530 /* SupportingFiles */,
@@ -159,10 +161,19 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		AADF71952ACCEF8A00A49530 /* Sources */ = {
+		AADF71952ACCEF8A00A49530 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AADF71A22ACCF56800A49530 /* Sources */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AADF71A22ACCF56800A49530 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				AADF71962ACCEF9D00A49530 /* Coordinator.swift */,
+				AADF71A02ACCF4A500A49530 /* SessionManager.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -239,6 +250,7 @@
 			files = (
 				AADF71972ACCEF9D00A49530 /* Coordinator.swift in Sources */,
 				AADF717C2ACCEE5000A49530 /* HomeViewController.swift in Sources */,
+				AADF71A12ACCF4A500A49530 /* SessionManager.swift in Sources */,
 				AADF71992ACCF02900A49530 /* AppCoordinator.swift in Sources */,
 				AADF71782ACCEE5000A49530 /* AppDelegate.swift in Sources */,
 				AADF719F2ACCF2B300A49530 /* SignInViewController.swift in Sources */,
