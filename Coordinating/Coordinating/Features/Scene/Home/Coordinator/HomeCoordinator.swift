@@ -33,7 +33,7 @@ extension HomeCoordinator: HomeCoordinating {
         UIView.transition(
             with: window,
             duration: 1.0,
-            options: .curveEaseInOut,
+            options: .beginFromCurrentState,
             animations: { [weak self] in
                 self?.window.rootViewController = navigation
                 self?.window.makeKeyAndVisible()

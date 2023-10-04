@@ -19,6 +19,7 @@
 		AADF71A12ACCF4A500A49530 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF71A02ACCF4A500A49530 /* SessionManager.swift */; };
 		AADF71A42ACCFE7100A49530 /* VirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF71A32ACCFE7100A49530 /* VirtualProxy.swift */; };
 		AADF71A72ACCFFBF00A49530 /* NSLayout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF71A62ACCFFBF00A49530 /* NSLayout+Extension.swift */; };
+		AADF71A92ACD78E600A49530 /* ViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF71A82ACD78E600A49530 /* ViewConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		AADF71A02ACCF4A500A49530 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		AADF71A32ACCFE7100A49530 /* VirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualProxy.swift; sourceTree = "<group>"; };
 		AADF71A62ACCFFBF00A49530 /* NSLayout+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayout+Extension.swift"; sourceTree = "<group>"; };
+		AADF71A82ACD78E600A49530 /* ViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,8 @@
 		AADF718D2ACCEE8D00A49530 /* Start */ = {
 			isa = PBXGroup;
 			children = (
-				AADF71982ACCF02900A49530 /* AppCoordinator.swift */,
 				AADF71772ACCEE5000A49530 /* AppDelegate.swift */,
+				AADF71982ACCF02900A49530 /* AppCoordinator.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -176,6 +178,7 @@
 		AADF71A52ACCFFAF00A49530 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AADF71A82ACD78E600A49530 /* ViewConfig.swift */,
 				AADF71A62ACCFFBF00A49530 /* NSLayout+Extension.swift */,
 			);
 			path = Core;
@@ -259,6 +262,7 @@
 				AADF71782ACCEE5000A49530 /* AppDelegate.swift in Sources */,
 				AADF719F2ACCF2B300A49530 /* SignInViewController.swift in Sources */,
 				AADF719D2ACCF20600A49530 /* SignInCoordinator.swift in Sources */,
+				AADF71A92ACD78E600A49530 /* ViewConfig.swift in Sources */,
 				AADF71A42ACCFE7100A49530 /* VirtualProxy.swift in Sources */,
 				AADF719B2ACCF0C900A49530 /* HomeCoordinator.swift in Sources */,
 			);

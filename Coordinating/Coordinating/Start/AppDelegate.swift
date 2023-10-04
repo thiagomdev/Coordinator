@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
     private func runApplication() -> Bool {
-        let window = UIWindow(frame: UIScreen.main.bounds)
+        let window = UIWindow(frame: UIScreen.main.coordinateSpace.bounds)
         self.window = window
         
         let navigation = UINavigationController()
